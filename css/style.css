@@ -1,0 +1,205 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+    /* outline:  1px dotted red; */
+}
+:root{
+    font-size: 16px;
+}
+
+body{
+    background-color: #f1f2f4;
+}
+
+nav{
+    height: 5rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .container{
+    /* background-color: red; */
+    /* outline: 1px solid red; */
+    display: flex;
+    height: 80%;
+    gap: 2rem;
+    align-items: center;
+    width:90%;
+}
+
+
+nav .container  .logo{
+    height: 100%;
+    object-fit:contain ;
+}
+
+nav .container .search{
+    height: 2rem;
+    font-size: 1rem;
+    border:none;
+    background-color: #f1f2f4;
+    border-radius: .5rem;
+    padding: .3rem 1rem;
+    color: #3a3a3a73;
+    flex-grow: 1;
+}
+
+nav .container .search:focus{
+    outline: none;
+    border: none;
+}
+
+nav .container .options{
+    display: flex;
+}
+
+nav .container .options .option{
+    display: flex;
+    padding: 1rem;
+    gap: .5rem;
+    font-size: 1.2rem;
+    border-radius: .5rem;
+    align-items: center;
+    transition: 400ms;
+}
+
+nav .container .options .option .icon{
+    width: 1.2rem;
+}
+
+nav .container .options .option .name{
+    text-transform: capitalize;
+}
+
+nav .container .options .option .more{
+    transition: transform 400ms;
+
+}
+
+nav .container .options .option:not(.more):hover{
+    background-color: rgba(51, 51, 51, 0.2);
+}
+
+nav .container .options .option:has(.more):hover{
+    background-color: blue;
+    color: white;
+    transition: 400ms;
+
+    .more{
+        transition: transform 400ms;
+        transform: rotate(180deg);
+        transition: transform 400ms;
+    }
+
+}
+
+nav .container .more-s{
+    width: 2rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+nav .container .more-s:hover{
+    background-color: rgba(51, 51, 51, 0.2);
+    transition: .4s;
+}
+
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+main{
+    padding: 1rem;
+}
+
+main .catagories{
+    display: flex;
+    /* border: 1px dotted red; */
+    background-color: white;
+    border-radius: .5rem;
+    justify-content: space-evenly;
+}
+
+main .catagories .catagory{
+    height: 100%;
+}
+
+main .catagories .catagory{
+    width: 8rem;
+}
+
+main .catagories .catagory img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+main .catagories .catagory .name{
+    display: flex;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+main .banner{
+    max-height: 25rem;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    margin-top: 1rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+main .sale-items{
+    background-color: white;
+    margin-top: .5rem;
+    padding: 1rem;
+   
+}
+
+main .sale-items p{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+main .cards{
+   
+    display: flex;
+    /* height: 12rem; */
+    padding: 1rem;
+    border-radius: 1rem;
+    justify-content: space-evenly;
+}
+main .cards .card{
+    display: flex;
+    flex-direction: column;
+    width: 9rem;
+    background-color:#f1f2f4;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    border: 2px solid rgba(239, 230, 230, 0.726);
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+main .cards .card img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+main .cards .card:hover img{
+    transform: scale(1.1);
+}
